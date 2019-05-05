@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <title>hw#5</title>
+    <link rel="stylesheet" type="text/css" href="Calcul.css">
+</head>
+<body>
+<p1>Calculator.</p1>
+<div id="keep">Тут хотел выводить сохраненный результат из localStorage</div>
+<div class="calculator">
+    <div class="calculator__form">
+        <div id = "display" class="calculator__row"></div>
+        <div class="calculator__row">
+            <button class = "button" id = "16">C</button>
+            <button class = "button" id = "13" disabled></button>
+            <button class = "button" id = "14" disabled></button>
+            <button class = "button" id = "17"><</button>
+            <button class = "button" onclick="clear_local()" id = "clear_LS">CE</button>
+        </div>
+        <div class="calculator__row">
+            <button class = "button" id = "7">7</button>
+            <button class = "button" id = "8">8</button>
+            <button class = "button" id = "9">9</button>
+            <button class = "button" id = "12">-</button>
+        </div>
+        <div class="calculator__row">
+            <button class = "button" id = "4">4</button>
+            <button class = "button" id = "5">5</button>
+            <button class = "button" id = "6">6</button>
+            <button class = "button" id = "11">+</button>
+        </div>
+        <div class="calculator__row">
+            <button class = "button" id = "1">1</button>
+            <button class = "button" id = "2">2</button>
+            <button class = "button" id = "3">3</button>
+            <button class = "button" id = "10" disabled></button>
+        </div>
+        <div class="calculator__row">
+            <button class = "button" id = "0">0</button>
+            <button class="bigbutton" id = "15">=</button>
+        </div>
+    </div>
+</div>
+<script src='Calcul.js'></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+}
+.container {
+    width: 500px;
+    border: 3px solid black;
+    border-radius: 10%;
+    margin: 40px auto;
+    padding: 10px;
+}
+h3:first-child {
+    text-align: center;
+}
+.deleteAll {
+    margin-left: 20px;
+}
+.deleteList,
+.deleteAll {
+    display: none
+}
+ul:not(:empty) ~ .deleteAll,
+ul:not(:empty) ~ .deleteList {
+    display: inline-block;
+}
+
+h3 {
+    border-bottom: 2px solid;
+    padding-bottom: 12px;
+}
+.deleteList {
+    margin-left: 157px;
+
+}
+
+input {
+    width: 355px;
+    height: 20px;
+    border: 2px solid;
+}
+#new-text{
+    margin-left: 68px;
+}
+#add {
+    width: 117px;
+    border: 1px solid #444;
+    border-radius: 6%;
+    height: 30px;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 3%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li:nth-child(3n) {
+    color: red;
+    font-family: 'Oswald', sans-serif;
+}
+li:nth-child(3n) label {
+    background-color: yellow;
+}
+li {
+    height: 50px;
+    position: relative;
+}
+label {
+    font-weight: bold;
+}
+li input {
+    display: none;
+}
+.checkbox {
+    border: 0;
+    background: white;
+}
+.fa-angle-down {
+    font-size: 20px;
+}
+.icons {
+    border: 0;
+    background: white;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.editMode input {
+    display: inline;
+    width: 77%;
+    border: 0;
+}
+.editMode label {
+    display: none;
+}
+.edit {
+    position: absolute;
+    right: 9%;
+}
+
+.delete {
+    position: absolute;
+    right: 3%;
+}
+.save {
+    position: absolute;
+    right: 10%;
+    bottom: 25px;
+}
+#finished label, 
+#finished input, 
+#finished .icons {
+    color: grey;
+}
+#finished label {
+    text-decoration: line-through;
+}
+
+

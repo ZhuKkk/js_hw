@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8"> 
+		<title>Список дел</title>
+		<link rel="stylesheet" href="CSS/style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+	<body>
+		<div id="root">
+			<div class="container">
+				<h3>Добавить дело</h3>
+				<input id="new-task" type="text">
+				<button id="add">Добавить</button>
+				<h3>Список дел</h3>
+				<ul id="unfinished"></ul>
+				<h3>Список завершённых дел</h3>
+				<ul id="finished"></ul>
+				<label class="deleteList">Очистить все списки</label>
+				<button class="icons deleteAll" onclick="deleteAllList()"><i class="fas fa-trash-restore-alt"></i></button>
+			</div>
+		</div>
+		<script src="JS/to-do-list.js"></script>
+		<script src="JS/changeBackground.js"></script>
+	</body>
+</html>
